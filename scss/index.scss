@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*移动端适配计算 start*/
+
+@function rem($px) {
+    @return $px/75px * 1rem;
+}
+
+body{
+	background-color: #FBD09B;
+}
+
+@mixin image-size($var1,$var2,$var3){
+	width: $var1;
+	left: $var2;
+	top: $var3;
+}
+
+%flex-box{
+	display: flex;
+	display: -webkit-flex;
+}
+
+%bg{
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
